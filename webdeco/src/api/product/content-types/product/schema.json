@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Gambar": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Nama": {
+      "type": "string",
+      "required": true
+    },
+    "Deskripsi": {
+      "type": "blocks",
+      "required": true
+    },
+    "Jumlah": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}
